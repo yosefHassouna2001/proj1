@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="csrf-token" content="93vtIqAr8Nz8DkZTVwCOy9SDzv5a1oJzsompRQFn">
+
+    <title>المحفظة </title>
+
+    <!-- [Icons] -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <!-- [Google Fonts] -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;family=Cairo&amp;display=swap" rel="stylesheet">
+    <!-- [Bootstrap Css] -->
+    <link href="https://tftwallet.com/web/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- [Favicon] -->
+    <link rel="shortcut icon" href="../assets/images/logo/2.jpg" type="image/x-icon">
+    <!-- bootstrp icon v1.9.1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- [Main Css] -->
+    <link rel="stylesheet" href="../assets/css/styledashboard/style.css">
+
+    <link rel="stylesheet" href="../assets/css/anmation.css">
+
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo mobile-menu-btn wow " data-wow-delay=".1s">
+            <a href="../home.html">
+                <img src="../assets/images/logo/55.png" alt="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="mb-0">
+                <li>
+                    <a href="dashboard.html" id="li_dashboard" class="wow" data-wow-delay=".2s">
+                        <i class="uil uil-estate"></i>
+                        <span>الرئيسية</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="wallet.html" id="li_wallet" class="active wow" data-wow-delay=".3s">
+                        <i class="uil uil-wallet"></i>
+                        <span>المحفظة</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="edit-personal.html" id="li_profile" class="wow" data-wow-delay=".4s">
+                        <i class="uil uil-user"></i>
+                        <span>حسابي</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="page wallet-page">
+        <div class="content p-5 pe-5 ps-3">
+            <div class="row">
+                <div class="col-xl-8 cols-12">
+                    <!-- Start of the actions -->
+                    <div class="w-100 mx-auto actions d-flex align-items-center mb-4 overflow-hidden ">
+                        <!-- Start of the deposit -->
+                        <a href="" class="action mb-0 p-3 ms-3 wow" data-wow-delay=".2s">
+                            <i class="uil uil-import"></i>
+                            <span class="fs-5 fw-bold">إيداع</span>
+                        </a>
+                        <!-- End of the deposit -->
+
+                        <!-- Start of the withdraw -->
+                        <a href="" class="action mb-0 p-3 ms-3 wow" data-wow-delay=".3s">
+                            <i class="uil uil-export"></i>
+                            <span class="fs-5 fw-bold">سحب</span>
+                        </a>
+                        <!-- End of the withdraw -->
+
+                        <!-- Start of the sending -->
+                        <a href="" class="action mb-0 p-3 ms-3 wow" data-wow-delay=".4s">
+                            <i class="uil uil-arrow-up-right"></i>
+                            <span class="fs-5 fw-bold">إرسال</span>
+                        </a>
+                        <!-- End of the sending -->
+
+                        <!-- Start of the recieving -->
+                        <div class="action mb-0 p-3 ms-3 wow" data-wow-delay=".5s" 
+                        data-bs-toggle="modal" data-bs-target="#recieveModal"
+                        onclick="
+                        document.querySelector('#recieveModal').classList=('show','modal');
+                        document.querySelector('body').classList=('modal-open');
+                        document.querySelector('body').style.overflow =('hidden');
+                        document.querySelector('body').style.paddingRight =('0px');
+                        document.querySelector('#recieveModal').style.display= 'block';
+                        document.querySelector('.modal-backdrop').classList=('modal-backdrop');
+                        document.querySelector('.modal-backdrop').style.display=('block');
+                        document.querySelector('.modal-backdrop').style.opacity = '0.5';
+                        
+                        " 
+                        
+                        >
+                            <i class="uil uil-arrow-down-left"></i>
+                            <span class="fs-5 fw-bold">إستقبال</span>
+                        </div>
+                        <!-- End of the recieving -->
+
+                        <!-- Start of the Convert -->
+                        <a href="" class="action mb-0 p-3 wow" data-wow-delay=".6s">
+                            <i class="bi bi-arrow-left-right"></i>
+                            <span class="fs-5 fw-bold">تحويل</span>
+                        </a>
+                        <!-- End of the Convert -->
+                    </div>
+                    <!-- End of the actions -->
+
+                    <!-- Start of the transactions row -->
+                    <div class="row">
+                        <div class="transactions">
+                            <div class="transactions wow" data-wow-delay=".4s">
+                                <div
+                                    class="last-transactions d-flex justify-content-between flex-wrap align-items-center ">
+                                    <span class="fs-4 fw-bold">آخر المعاملات</span>
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <!-- Show all link -->
+                                        <a href="#" class="text-black text-decoration-none fs-6 ms-3 mb-0">
+                                            عرض
+                                            0
+                                            من
+                                            0
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                                <div class="alert alert-light" role="alert">
+                                    لا يوجد بيانات لعرضها
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of the transactions row -->
+                </div>
+
+                <div class="col-xl-4 cols-12">
+                    <!-- Start of the funds -->
+                    <div class="wallet mb-3">
+                        <div class="ecard wow" data-wow-delay=".3s">
+                            <div class="details">
+                                <span class="card-title d-block">الرصيد المتاح</span>
+                                <div class="balance">$0.000</div>
+                            </div>
+                            <span class="card-name">AHMED ALI</span>
+                        </div>
+                    </div>
+                    <!-- End of the funds -->
+
+                    <!-- Start of the balances -->
+                    <div class="balances w-100 mx-auto wow" data-wow-delay=".5s">
+                        <div class="p-4">
+                            <h6 class="text-white opacity-75">الرصيد الأساسي</h6>
+                            <p class="text-white fs-3 mb-0 mb-2">$0.000</p>
+
+                            <h6 class="text-white opacity-75">رصيد قيد المعالجة</h6>
+                            <p class="text-white fs-3 mb-0 mb-5">$0.000</p>
+
+                            <h6 class="text-white opacity-75">رصيد قيد الإستخدام</h6>
+                            <p class="text-white fs-3 mb-0 mb-2">$0.000</p>
+                        </div>
+                    </div>
+                    <!-- End of the balances -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Start of the recieve modal -->
+    <div class="modal" tabindex="-1" id="recieveModal" aria-labelledby="recieveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="mb-0 fs-5 fw-bold text-center w-100">
+                        معلومات الإستقبال
+                    </h5>
+                </div>
+                <div class="modal-body">
+                    <h5 class="mb-3 text-muted fs-6">البريد الإلكتروني</h5>
+                    <div class="d-flex w-100 justify-content-between align-items-center">
+                        <input id="recievedEmail" type="text" value="AHMED.ALI@gmail.com" style="outline: none"
+                            class="w-75 bg-white fs-5 border-0" readonly />
+                        <button id="copyEmail" class="btn btn-secondary">نسخ</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" onclick="
+                        document.querySelector('#recieveModal').classList=('hide','modal');
+                        document.querySelector('body').classList=('');
+                        document.querySelector('body').style=('');
+                        document.querySelector('#recieveModal').style.display= 'none';
+                        document.querySelector('.modal-backdrop').style.display=('none');
+                        
+                        " 
+                        class="btn btn-primary mx-auto px-3 fs-5 w-100">
+                        إغلاق
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of the recieve modal -->
+
+    
+    <!-- Bootstrp v 5.2.1 script js "offline" -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- wow script  -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- main script -->
+    <script src="../assets/js/main.js"></script>
+    
+<!-- <script src="https://tftwallet.com/web/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<!-- <script src="../assets/js/maindashboard.js"></script> -->
+
+
+</body>
+
+</html>

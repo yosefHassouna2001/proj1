@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="csrf-token" content="93vtIqAr8Nz8DkZTVwCOy9SDzv5a1oJzsompRQFn">
+
+    <title> تعديل حسابي</title>
+
+    <!-- [Icons] -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css">
+    <!-- [Google Fonts] -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;family=Cairo&amp;display=swap" rel="stylesheet">
+    <!-- [Bootstrap Css] -->
+    <link href="https://tftwallet.com/web/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- [Favicon] -->
+    <link rel="shortcut icon" href="../assets/images/logo/2.jpg" type="image/x-icon">
+    
+    <!-- [Main Css] -->
+        <link rel="stylesheet" href="../assets/css/styledashboard/style.css">
+    
+        <link rel="stylesheet" href="../assets/css/anmation.css">
+
+    </head>
+<body>
+    <div class="menu">
+        <div class="logo mobile-menu-btn  wow " data-wow-delay=".1s">
+            <a href="../home.html">
+                <img src="../assets/images/logo/55.png" alt="logo-img">
+            </a>
+        </div>
+        <nav>
+            <ul class="mb-0">
+                <li>
+                    <a href="dashboard.html" id="li_dashboard " class="wow" data-wow-delay=".2s" >
+                        <i class="uil uil-estate"></i>
+                        <span>الرئيسية</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="wallet.html" id="li_wallet" class="wow" data-wow-delay=".3s">
+                        <i class="uil uil-wallet"></i>
+                        <span>المحفظة</span>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="edit-personal.html" id="li_profile" class="active wow" data-wow-delay=".4s">
+                        <i class="uil uil-user"></i>
+                        <span>حسابي</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main class="page edit-personal-info-page">
+        <div class="content pt-4 pe-5 ps-3 mb-5">
+            <!-- Start of the deposit forms -->
+            <form method="POST" action="" class=" deposit-forms d-flex align-items-start justify-content-center w-100 bg-white ">             
+                <div class="container pay-ways-box active-form p-5 w-100">
+                    <!-- Start of the title -->
+                    <h4 class="fs-4 fw-bold mb-5 text-center wow" data-wow-delay=".2s" >
+                        تعديل المعلومات الشخصية
+                    </h4>
+                    <!-- End of the title -->
+
+                    <div class="deposit-steps d-flex flex-wrap px-2 overflow-hidden">
+                        <!-- Start of the first step -->
+                        <div id="firstStep" class="step first-step w-100 position-relative">
+                            <div class="row m-0">
+                                <!-- Start of the amount box -->
+                                <div class="amount mb-3 row wow" data-wow-delay=".3s">
+                                    <!-- Commission title -->
+                                    <h5 class="col-xl-3 col-12 fs-5 fw-bold mb-0">
+                                        الإسم
+                                    </h5>
+                                    <div class="col-xl-9 col-12 fs-5 mb-0 commission-value px-0">
+                                        <input type="text" name="name" required value="AHMED ALI"
+                                               class="form-control fs-5"
+                                               placeholder="الإسم الشخصي"/>
+                                    </div>
+                                </div>
+                                <div class="amount mb-3 row wow" data-wow-delay=".4s">
+                                    <h5 class="col-xl-3 col-12 fs-5 fw-bold mb-0">
+                                        الصورة الشخصية
+                                    </h5>
+                                    <div class="col-xl-9 col-12 fs-5 mb-0 commission-value px-0">
+                                        <input class="form-control" type="file" accept="image/*"  name="image" style="padding: 5px !important" />
+                                    </div>
+                                </div>
+                                <!-- End of the amount box -->
+
+                                <!-- Start of the commission box -->
+                                <div class="commission mb-3 row wow" data-wow-delay=".5s">
+                                    <!-- Commission title -->
+                                    <h5 class="col-xl-3 col-12 fs-5 fw-bold mb-0">
+                                        نبذه عني
+                                    </h5>
+                                    <div class="col-xl-9 col-12 fs-5 mb-0 commission-value px-0">
+                                    <textarea
+                                        name="about"
+                                        class="form-control fs-5"
+                                        placeholder="اكتب نبذة تعريفية"
+                                        style="min-height: 200px"></textarea>
+                                    </div>
+                                </div>
+                                <!-- End of the comission box -->
+
+                                <!-- Start of the commission box -->
+                                <div class="commission mb-3 row wow" data-wow-delay=".6s">
+                                    <!-- Commission title -->
+                                    <h5 class="col-xl-3 col-12 fs-5 fw-bold mb-0 px-0">
+                                        كلمة المرور الحالية
+                                    </h5>
+                                    <div class="col-xl-9 col-12 fs-5 mb-0 commission-value px-0">
+                                        <input
+                                            type="password"
+                                            name="old_password"
+                                            required
+                                            class="form-control fs-5"
+                                            placeholder="أدخل كلمة المرور الحالية"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- End of the comission box -->
+
+                                <!-- Start of the commission box -->
+                                <div class="commission mb-3 row wow" data-wow-delay=".7s">
+                                    <!-- Commission title -->
+                                    <h5 class="col-xl-3 col-12 fs-5 fw-bold mb-0 px-0">
+                                        كلمة المرور الجديدة
+                                    </h5>
+                                    <div class="col-xl-9 col-12 fs-5 mb-0 commission-value px-0">
+                                        <input
+                                            type="password"
+                                            name="password"
+                                            class="form-control fs-5"
+                                            placeholder="أدخل كلمة المرور الجديدة"
+                                        />
+                                    </div>
+                                </div>
+                                <!-- End of the comission box -->
+
+                                <!-- Start of the commission box -->
+                                <div class="commission mb-3 row wow" data-wow-delay=".8s">
+                                    <!-- Commission title -->
+                                    <h5 class="col-xl-3 col-12 fs-5 fw-bold mb-0 px-0">
+                                        تأكيد كلمة المرور الجديدة
+                                    </h5>
+                                    <div class="col-xl-9 col-12 fs-5 mb-0 commission-value px-0">
+                                        <input type="password" name="password_confirmation" class="form-control fs-5"
+                                               placeholder="أدخل تأكيد كلمة المرور الجديدة"/>
+                                    </div>
+                                </div>
+                                <!-- End of the comission box -->
+
+                                <div class="d-flex align-items-center pb-2 justify-content-end wow" data-wow-delay=".9s">
+                                    <!-- Second step btn -->
+                                    <button
+                                        id="secondStepBtn"
+                                        class="btn btn-primary fs-5 lh-lg fw-bold p-1 px-5">
+                                        حفظ
+                                    </button>
+                                    <!-- End of the second step btn -->
+                                </div>
+
+                                <!-- End of the epay container -->
+                            </div>
+                        </div>
+                        <!-- End of the first step -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+
+    <!-- Bootstrp v 5.2.1 script js "offline" -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <!-- wow script  -->
+    <script src="../assets/js/wow.min.js"></script>
+    <!-- main script -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
